@@ -2,6 +2,14 @@
 
 <%= render 'header' %>
 
+<!-- app/views/articles/index.html.erb -->
+<%= cl_image_tag("tqksxq7fbiif8wkvlnec",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("utrkzg4emiljeh1djgmy",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
+
 <div class="contianer" style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 10px;">
   <% @lists.each do |list| %>
   <div style="border: 1px solid black; padding: 4px; margin-top: 10px;">
