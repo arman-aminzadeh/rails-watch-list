@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  root to: "list#index"
   # get '/lists', to: 'lists#index'
   # get '/lists/:id', to: 'lists#show'
   # get '/list/new', to: 'lists#new'
